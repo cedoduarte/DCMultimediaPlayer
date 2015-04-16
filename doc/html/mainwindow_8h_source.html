@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>DCMultimediaPlayer: Fichero Fuente mainwindow.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">DCMultimediaPlayer
+   </div>
+   <div id="projectbrief">Reproductor Multimedia</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">mainwindow.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mainwindow_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MAINWINDOW_H // OK</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MAINWINDOW_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QMainWindow&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QMediaPlayer&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>Ui {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_main_window.html">MainWindow</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span>QPushButton;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span>QSlider;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_d_options.html">DOptions</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>QLabel;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>QDockWidget;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span>QLineEdit;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="class_d_play_list_widget.html">DPlayListWidget</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>QProgressBar;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span><a class="code" href="class_d_progress_slider.html">DProgressSlider</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span><a class="code" href="class_d_video_widget.html">DVideoWidget</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span>QMediaPlayer;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">class </span>QMediaPlaylist;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">class </span><a class="code" href="class_d_video_settings_dialog.html">DVideoSettingsDialog</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_main_window.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_main_window.html">MainWindow</a> : <span class="keyword">public</span> QMainWindow {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_main_window.html#af1a7cb1b65ba275f0f4e8802fd94f5bb">MainWindow</a>(<span class="keyword">const</span> QStringList &amp;myfilenames,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        QWidget *parent = 0);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// Acciones</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a25f849153b0832f0eb6bc2ce2e0f985d">onOpenFileActionTriggered</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a61622e4302c118ffb95fbfba23c4aca7">onQuitActionTriggered</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ab60edd6c6c4cfc68f2880ea253880f27">onPlayActionTriggered</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#acc188e51c46c4e10daf3515dc9938ac0">onPauseActionTriggered</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ab812927c2b34f762ee2506110c0a86fd">onStopActionTriggered</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a4f1c82e36d9a4f1826227199102e5517">onNextActionTriggered</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ae5a07595a7db06c740d8db666c5b62a8">onPrevActionTriggered</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#abeffc561ae15fa52d34262f2c2a682c1">onVideoOptionsActionTriggered</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a790021ef071c5b57f4ccd995f7ad25a1">onFullScreenClicked</a>(); <span class="comment">// Botón pantalla completa</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a5ae38bc4de99d7ea1234c37697d5908c">dragEnterEvent</a>(QDragEnterEvent *e);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a4dbcf48c14295e78b3016e2d99d9ee91">dragLeaveEvent</a>(QDragLeaveEvent *e);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#aa869107942e906c33003c01cb56a6881">dragMoveEvent</a>(QDragMoveEvent *e);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#aae0d7740b8934fb20d7d49d485e99b2c">dropEvent</a>(QDropEvent *e);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">void</span> onMuteSoundClicked(<span class="keywordtype">bool</span> checked); <span class="comment">// Botón de silencio</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> onVolumeSliderValueChanged(<span class="keywordtype">int</span> val); <span class="comment">// Deslizador de volumen</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> onPauseMultimedia(); <span class="comment">// Pausar multimedia</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> onPlayMultimedia(); <span class="comment">// Reproducir multimedia</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="comment">// Objetos multimedia</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> onDurationChanged(qint64 dur);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">void</span> onPositionChanged(qint64 pos);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">void</span> onMediaStatusChanged(QMediaPlayer::MediaStatus s);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">void</span> onAboutDCactionTriggered();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> onAboutDCMPactionTriggered();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="comment">// Lista de reproducción</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">void</span> onClearFilterClicked(); <span class="comment">// Limpia filtro</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">void</span> onFilterTextEdited(<span class="keyword">const</span> QString &amp;txt); <span class="comment">// Filtro</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    Ui::MainWindow *ui;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="class_d_options.html">DOptions</a> *doptions;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    QLabel *timer;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    QStringList filenames;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="comment">// Menús</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    QMenuBar *menubar; <span class="comment">// Barra de menús</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    QMenu *filemenu; <span class="comment">// Menú archivo</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    QMenu *playmenu; <span class="comment">// Menú reproducción</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    QMenu *toolsmenu; <span class="comment">// Menú herramientas</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    QMenu *helpmenu; <span class="comment">// Menú ayuda</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="comment">// Acciones</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    QAction *options;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    QAction *openfileaction;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    QAction *openfileactionTB; <span class="comment">// Acción abrir archivo</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    QAction *quitaction;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    QAction *quitactionTB; <span class="comment">// Acción quitar</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    QAction *playaction;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    QAction *playactionTB; <span class="comment">// Acción reproducir</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    QAction *pauseaction;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    QAction *pauseactionTB; <span class="comment">// Acción pausar</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    QAction *stopaction;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    QAction *stopactionTB; <span class="comment">// Acción detener</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    QAction *nextaction;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    QAction *nextactionTB; <span class="comment">// Acción siguiente</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    QAction *prevaction;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    QAction *prevactionTB; <span class="comment">// Accion anterior</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    QAction *videooptionsaction;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    QAction *videooptionsactionTB; <span class="comment">// Opciones de video</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    QAction *aboutDCaction;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    QAction *aboutDCactionTB; <span class="comment">// Acerca de DuarteCorp</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    QAction *aboutDCMPaction;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    QAction *aboutDCMPactionTB; <span class="comment">// Acerca de DC Media Player</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="comment">// Lista de reproducción</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    QDockWidget *dockwidget; <span class="comment">// Panel lateral</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    QPushButton *clearfilter; <span class="comment">// Limpia filtro</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    QLineEdit *filter; <span class="comment">// Filtro</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <a class="code" href="class_d_play_list_widget.html">DPlayListWidget</a> *playlistwidget; <span class="comment">// Lista de archivos en reproducción</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    QPushButton *playNextWhenFinish; <span class="comment">// Reproduce siguiente al terminar</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="comment">// Progreso multimedia</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    QPushButton *fullscreen; <span class="comment">// Botón pantalla completa</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    QProgressBar *progressbar; <span class="comment">// Barra de progreso</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <a class="code" href="class_d_progress_slider.html">DProgressSlider</a> *progressslider; <span class="comment">// Deslizador de progreso</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    QPushButton *mutesound; <span class="comment">// Botón de silencio</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    QSlider *volumeslider; <span class="comment">// Deslizador de volumen</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="comment">// Objetos multimedia</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <a class="code" href="class_d_video_widget.html">DVideoWidget</a> *videowidget; <span class="comment">// Salida de video</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    QMediaPlayer *mediaplayer; <span class="comment">// Reproductor multimedia</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    QMediaPlaylist *mediaplaylist; <span class="comment">// Lista de reproducción</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="comment">// Barras de herramientas</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    QToolBar *filetoolbar; <span class="comment">// Barra de herramientas de archivo</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    QToolBar *playtoolbar; <span class="comment">// Barra de herramientas de reproducción</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    QToolBar *helptoolbar; <span class="comment">// Barra de herramientas de ayuda</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    QToolBar *progresstoolbar; <span class="comment">// Barra de herramientas de progreso</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="comment">// Otros</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <a class="code" href="class_d_video_settings_dialog.html">DVideoSettingsDialog</a> *videooptionsd; <span class="comment">// Diálogo de opciones de video</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="comment">// Métodos de inicialización</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">void</span> initializeMenus();</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordtype">void</span> initializeActions();</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordtype">void</span> initializePlayList();</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordtype">void</span> initializeMultimediaProgress();</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordtype">void</span> initializeMultimediaObjects();</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordtype">void</span> initializeToolBars();</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">void</span> initializeOthers();</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordtype">void</span> initialize(); <span class="comment">// Inicializa todo</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="comment">// Métodos de configuración</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordtype">void</span> configureMenus();</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordtype">void</span> configureActions();</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordtype">void</span> configurePlayList();</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordtype">void</span> configureMultimediaProgress();</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordtype">void</span> configureMultimediaObjects();</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordtype">void</span> configureToolBars();</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordtype">void</span> configureOthers();</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordtype">void</span> configure(); <span class="comment">// Inicializa todo</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="comment">// Métodos de conexión</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordtype">void</span> connectActions();</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordtype">void</span> connectPlayList();</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordtype">void</span> connectMultimediaProgress();</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordtype">void</span> connectMultimediaObjects();</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordtype">void</span> connections();</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordtype">void</span> lastConfigurations();</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;};</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">#endif // MAINWINDOW_H</span></div>
+<div class="ttc" id="class_main_window_html_ae5a07595a7db06c740d8db666c5b62a8"><div class="ttname"><a href="class_main_window.html#ae5a07595a7db06c740d8db666c5b62a8">MainWindow::onPrevActionTriggered</a></div><div class="ttdeci">void onPrevActionTriggered()</div><div class="ttdoc">onPrevActionTriggered </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:458</div></div>
+<div class="ttc" id="class_d_play_list_widget_html"><div class="ttname"><a href="class_d_play_list_widget.html">DPlayListWidget</a></div><div class="ttdoc">The DPlayListWidget class. </div><div class="ttdef"><b>Definition:</b> dplaylistwidget.h:14</div></div>
+<div class="ttc" id="class_d_options_html"><div class="ttname"><a href="class_d_options.html">DOptions</a></div><div class="ttdoc">The DOptions class. </div><div class="ttdef"><b>Definition:</b> doptions.h:13</div></div>
+<div class="ttc" id="class_main_window_html_abeffc561ae15fa52d34262f2c2a682c1"><div class="ttname"><a href="class_main_window.html#abeffc561ae15fa52d34262f2c2a682c1">MainWindow::onVideoOptionsActionTriggered</a></div><div class="ttdeci">void onVideoOptionsActionTriggered()</div><div class="ttdoc">onVideoOptionsActionTriggered </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:464</div></div>
+<div class="ttc" id="class_main_window_html_acc188e51c46c4e10daf3515dc9938ac0"><div class="ttname"><a href="class_main_window.html#acc188e51c46c4e10daf3515dc9938ac0">MainWindow::onPauseActionTriggered</a></div><div class="ttdeci">void onPauseActionTriggered()</div><div class="ttdoc">onPauseActionTriggered </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:444</div></div>
+<div class="ttc" id="class_main_window_html_ae98d00a93bc118200eeef9f9bba1dba7"><div class="ttname"><a href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">MainWindow::~MainWindow</a></div><div class="ttdeci">~MainWindow()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:43</div></div>
+<div class="ttc" id="class_main_window_html_a4f1c82e36d9a4f1826227199102e5517"><div class="ttname"><a href="class_main_window.html#a4f1c82e36d9a4f1826227199102e5517">MainWindow::onNextActionTriggered</a></div><div class="ttdeci">void onNextActionTriggered()</div><div class="ttdoc">onNextActionTriggered </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:452</div></div>
+<div class="ttc" id="class_d_video_widget_html"><div class="ttname"><a href="class_d_video_widget.html">DVideoWidget</a></div><div class="ttdoc">The DVideoWidget class. </div><div class="ttdef"><b>Definition:</b> dvideowidget.h:14</div></div>
+<div class="ttc" id="class_main_window_html_a790021ef071c5b57f4ccd995f7ad25a1"><div class="ttname"><a href="class_main_window.html#a790021ef071c5b57f4ccd995f7ad25a1">MainWindow::onFullScreenClicked</a></div><div class="ttdeci">void onFullScreenClicked()</div><div class="ttdoc">onFullScreenClicked </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:517</div></div>
+<div class="ttc" id="class_main_window_html_aae0d7740b8934fb20d7d49d485e99b2c"><div class="ttname"><a href="class_main_window.html#aae0d7740b8934fb20d7d49d485e99b2c">MainWindow::dropEvent</a></div><div class="ttdeci">virtual void dropEvent(QDropEvent *e)</div><div class="ttdoc">dropEvent </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:626</div></div>
+<div class="ttc" id="class_d_video_settings_dialog_html"><div class="ttname"><a href="class_d_video_settings_dialog.html">DVideoSettingsDialog</a></div><div class="ttdoc">The DVideoSettingsDialog class. </div><div class="ttdef"><b>Definition:</b> dvideosettingsdialog.h:12</div></div>
+<div class="ttc" id="class_main_window_html_a25f849153b0832f0eb6bc2ce2e0f985d"><div class="ttname"><a href="class_main_window.html#a25f849153b0832f0eb6bc2ce2e0f985d">MainWindow::onOpenFileActionTriggered</a></div><div class="ttdeci">void onOpenFileActionTriggered()</div><div class="ttdoc">onOpenFileActionTriggered </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:417</div></div>
+<div class="ttc" id="class_main_window_html_ab60edd6c6c4cfc68f2880ea253880f27"><div class="ttname"><a href="class_main_window.html#ab60edd6c6c4cfc68f2880ea253880f27">MainWindow::onPlayActionTriggered</a></div><div class="ttdeci">void onPlayActionTriggered()</div><div class="ttdoc">onPlayActionTriggered </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:440</div></div>
+<div class="ttc" id="class_main_window_html_a4dbcf48c14295e78b3016e2d99d9ee91"><div class="ttname"><a href="class_main_window.html#a4dbcf48c14295e78b3016e2d99d9ee91">MainWindow::dragLeaveEvent</a></div><div class="ttdeci">virtual void dragLeaveEvent(QDragLeaveEvent *e)</div><div class="ttdoc">dragLeaveEvent </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:618</div></div>
+<div class="ttc" id="class_d_progress_slider_html"><div class="ttname"><a href="class_d_progress_slider.html">DProgressSlider</a></div><div class="ttdoc">The DProgressSlider class. </div><div class="ttdef"><b>Definition:</b> dprogressslider.h:9</div></div>
+<div class="ttc" id="class_main_window_html_ab812927c2b34f762ee2506110c0a86fd"><div class="ttname"><a href="class_main_window.html#ab812927c2b34f762ee2506110c0a86fd">MainWindow::onStopActionTriggered</a></div><div class="ttdeci">void onStopActionTriggered()</div><div class="ttdoc">onStopActionTriggered </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:448</div></div>
+<div class="ttc" id="class_main_window_html_aa869107942e906c33003c01cb56a6881"><div class="ttname"><a href="class_main_window.html#aa869107942e906c33003c01cb56a6881">MainWindow::dragMoveEvent</a></div><div class="ttdeci">virtual void dragMoveEvent(QDragMoveEvent *e)</div><div class="ttdoc">dragMoveEvent </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:622</div></div>
+<div class="ttc" id="class_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdoc">The MainWindow class. </div><div class="ttdef"><b>Definition:</b> mainwindow.h:28</div></div>
+<div class="ttc" id="class_main_window_html_a61622e4302c118ffb95fbfba23c4aca7"><div class="ttname"><a href="class_main_window.html#a61622e4302c118ffb95fbfba23c4aca7">MainWindow::onQuitActionTriggered</a></div><div class="ttdeci">void onQuitActionTriggered()</div><div class="ttdoc">onQuitActionTriggered </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:436</div></div>
+<div class="ttc" id="class_main_window_html_af1a7cb1b65ba275f0f4e8802fd94f5bb"><div class="ttname"><a href="class_main_window.html#af1a7cb1b65ba275f0f4e8802fd94f5bb">MainWindow::MainWindow</a></div><div class="ttdeci">MainWindow(const QStringList &amp;myfilenames, QWidget *parent=0)</div><div class="ttdoc">MainWindow. </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:27</div></div>
+<div class="ttc" id="class_main_window_html_a5ae38bc4de99d7ea1234c37697d5908c"><div class="ttname"><a href="class_main_window.html#a5ae38bc4de99d7ea1234c37697d5908c">MainWindow::dragEnterEvent</a></div><div class="ttdeci">virtual void dragEnterEvent(QDragEnterEvent *e)</div><div class="ttdoc">dragEnterEvent </div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:614</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Lunes, 9 de Junio de 2014 15:54:15 para DCMultimediaPlayer por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

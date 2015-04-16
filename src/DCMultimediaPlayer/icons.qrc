@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file>quit.png</file>
+        <file>openfile.png</file>
+        <file>next.png</file>
+        <file>play.png</file>
+        <file>prev.png</file>
+        <file>stop.png</file>
+        <file>pause.png</file>
+        <file>normalsound.png</file>
+        <file>clearfilter.png</file>
+        <file>fullscreen.png</file>
+        <file>aboutDC.png</file>
+        <file>mainicon.png</file>
+        <file>audiofile.png</file>
+        <file>unknown.png</file>
+        <file>videofile.png</file>
+        <file>videooptions.png</file>
+        <file>mutedsound.png</file>
+        <file>delete.png</file>
+        <file>deleteall.png</file>
+        <file>mainwindow.png</file>
+        <file>playnextwhenfinish.png</file>
+    </qresource>
+</RCC>

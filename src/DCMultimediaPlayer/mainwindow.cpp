@@ -24,8 +24,10 @@
 #include <QLabel>
 #include <doptions.h>
 
-MainWindow::MainWindow(const QStringList &myfilenames, QWidget *parent) :
-    QMainWindow(parent), ui(new Ui::MainWindow) {
+MainWindow::MainWindow(const QStringList &myfilenames, QWidget *parent) 
+    : QMainWindow(parent)
+    , ui(new Ui::MainWindow)
+{
     ui->setupUi(this);
     timer = new QLabel(this);
     ui->statusBar->addPermanentWidget(timer);
